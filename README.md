@@ -3,6 +3,12 @@ Azure Container Registry Image cleanup script written in GO
 
 
 # How to Use
+## ENV Variables
+
+AZURE_TENANT_ID - Azure Tenant id of service principal
+AZURE_CLIENT_ID - Azure Client id of service principal 
+AZURE_CLIENT_SECRET - Azure Client password of service principal
+
 ## ARGS
 
 azureregistryname (Required) - Name of the ACR Resource
