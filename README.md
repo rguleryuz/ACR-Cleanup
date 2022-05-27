@@ -15,18 +15,18 @@ enabledelete (optional) - Enable actual deletion of images instead of just scann
 
 # Example
 
-go run main.go -azureregistryname yourregistryname
+1. go run main.go -azureregistryname yourregistryname
 
 In this case, script will default to scanning for images to delete (ImagestoKeep = 10 and EnableDelete = "no")
 
-go run main.go -azureregistryname yourregistryname -enabledelete yes
+2. go run main.go -azureregistryname yourregistryname -enabledelete yes
 
 In this case, script will delete any surplus images above the default of 10 images
 
-go run main.go -azureregistryname yourregistryname -enabledelete yes -imagestokeep 20
+3. go run main.go -azureregistryname yourregistryname -enabledelete yes -imagestokeep 20
 
 In this case, script will delete any surplus images above 20 images per repository
 
-go run main.go -azureregistryname yourregistryname -enabledelete yes -repository yourrepositoryname
+4. go run main.go -azureregistryname yourregistryname -enabledelete yes -repository yourrepositoryname
 
 In this case, script will delete any surplus images within the "yourrepositoryname" repository
